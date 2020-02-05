@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Roboto+Slab:300,400,800&display=swap');
+
+:root {
+  --primary: rgba(0, 183, 197, 1);
+  --primary_25: rgba(0, 183, 197, 0.25);
+  --primary_10: rgba(0, 183, 197, 0.1);
+  --primary-darken: #03a3af;
+  --dark: #3d4449;
+  --darker: #0f3535;
+  --gray: #e2e2e2;
+  --light: #efefef;
+  --white: #ffffff;
+  --white_5: rgba(255, 255, 255, 0.05);
+  --white_10: rgba(255, 255, 255, 0.1);
+  --white_25: rgba(255, 255, 255, 0.25);
+  --white_50: rgba(255, 255, 255, 0.5);
+  --blue: rgba(0, 118, 255, 1);
+  --red: rgba(186, 71, 19, 1);
+  --orange: rgba(224, 125, 26, 1);
+  --yellow: rgba(255, 234, 0, 101);
+  --green: rgba(49, 224, 26, 1);
+  --purple: rgba(143, 3, 195, 1);
+  --border-radius: 10px;
+  --border-radius-sm: 5px;
+  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  --transition-in-out: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--darker);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+span,
+p,
+input,
+blockquote {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--darker);
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50px;
+  border: 1px solid var(--primary_25);
+  transition: var(--transition-in-out);
+  &:hover {
+    background-color: var(--primary-darken);
+  }
+}
